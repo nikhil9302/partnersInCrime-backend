@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-k!xel54-l9h-lge_dh6s*5f_72gmz4%qi%^6)3*&rzd)!sah)i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://partners-in-crime.herokuapp.com']
 
@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
-    'corsheaders'
+    'corsheaders',
+    'main.apps.MainConfig'
 ]
 
 REST_FRAMEWORK = {
