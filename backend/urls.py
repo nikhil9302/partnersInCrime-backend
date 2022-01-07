@@ -19,5 +19,6 @@ from django.urls.conf import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('authapi/',include('authapi.urls'))
+    path('authapi/',include('authapi.urls')),
+    path('userdata/',include('userExData.urls')),
 ]

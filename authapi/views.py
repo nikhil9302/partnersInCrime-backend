@@ -23,7 +23,7 @@ class MyTokenObtainPairView(TokenObtainPairView):
 @api_view(['GET'])
 def getRoutes(request):
     routes = [
-        '/autapi/token',
+        '/authapi/token',
         '/authapi/token/refresh'
     ]
 
